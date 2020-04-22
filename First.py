@@ -11,8 +11,8 @@ arithmetic_mean1 = mean(array)
 print('Сумма:', s)
 print('Сумма: ' + str(s))  # так не надо, код читается хуже
 print('Произведение:', composition)
-print('Среднее арифметическое:', arithmetic_mean)
-print('Среднее арифметическое:', arithmetic_mean1)
+print('Среднее арифметическое:{0:.2f}'.format(arithmetic_mean))
+print('Среднее арифметическое:{0:.2f}'.format(arithmetic_mean1))
 
 '''
 line = input('Введите 3 числа:')  # ввод данных одной строкой
