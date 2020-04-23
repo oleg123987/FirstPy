@@ -1,4 +1,4 @@
-# Посчитать общее количество слов в файле
+# Посчитать в предложениях количество гласных букв
 
 
 f = open(r'C:\Users\Oleg\PycharmProjects\First\resources\sentence.txt', encoding="utf-8")  # r - raw string
