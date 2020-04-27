@@ -5,14 +5,24 @@ f = open(r'C:\Users\Oleg\PycharmProjects\First\resources\sentence.txt', encoding
 text = f.readline().lower()
 f.close()
 
+sum_vowels = (text.count('е')
+            + text.count('и')
+
+print(sum_vowels)
+
 sum_vowels = 0
 
 # TODO здесь цикл и подсчёт гласных с его помощью
 
-print(sum_vowels)
 
 
 # TODO добавить все возможные гласные буквы русского алфавита в массив ru
+
+ru = ['а', 'о', 'и', 'е', 'ё', 'э', 'ы', 'у', 'ю', 'я']
+
 # TODO добавить все возможные гласные буквы английского алфавита в массив en
+
+en = ['a', 'i', 'u', 'e', 'o', 'y']
+
 # TODO реализовать подсчёт всех гласных букв через цикл по элементам массива ru
 # TODO считать из файла вторую строку и реализовать ту же самую логику, только для массива en
