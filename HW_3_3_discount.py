@@ -3,11 +3,20 @@
 
 goods = ['1000', '20', '310', '2300']  # TODO данные сохранить в purchase.csv и читать их из этого файла
 
-s = sum(int(goods[i]) for i in range(0, int(len(goods))))
-s = sum(map(int, goods))
+
+def price_goods(prices):
+    total = sum(map(int, prices))
+    discount_message = 'без скидки:'
+    if total >= 3000:
+        total *= 0.7
+        discount_message = 'со скидкой:'
+    print('Итоговая сумма', discount_message, round(total))
+    return total
 
 
-goods = [1000, 20, 310, 2300]
-s = sum(goods)  # TODO расчёт скидки вынести в отдельный метод (см пример в 2_1)
-if s >= 3000:
-    print('Итоговая сумма со скидкой:', round(s * 0.7))
+# s = sum(int(goods[i]) for i in range(0, int(len(goods))))
+
+price_goods(input().split())
+res = price_goods(goods)
+print(res)
+print(price_goods(['1000', '20', '310']))
