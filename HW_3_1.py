@@ -11,9 +11,11 @@ for line in f.readlines():  # построчное чтение из файла
         # из слова удаляем лишние сиволы (не буквы), приводим к нижнему регистру, учитываем случай для "-" внутри слова
         word = word.strip(string.punctuation + string.whitespace).lower().replace('-', '')
         # если слово состоит из букв и не содержится в исключениях (массивы ru, en)
-        print(word)
         for c in word:
-            if c.contains(ru):
+            if c in ru:
+                odd_letters += 1
+        for c in word:
+            if c in en:
                 odd_letters += 1
     # if word.isalpha() and word not in ru + en:
         #     words_amount += 1
