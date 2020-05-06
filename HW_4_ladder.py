@@ -7,3 +7,9 @@ i-я ступенька состоит из чисел от 1 до i без пр
 12
 123
 """
+
+number = int(input('Введите натуральное число:'))
+for number1 in range(1, number + 1):
+    for j in range(1, number1 + 1):
+        print(j, end='')
+    print()
