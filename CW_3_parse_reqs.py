@@ -1,14 +1,14 @@
 
 file = open('resources/requirements.txt')
 
-unuqie = set()
+unique = set()
 all = []
 for line in file.readlines():
     value = line.strip()
-    unuqie.add(value)
+    unique.add(value)
     all.append(value)
 
-print(len(unuqie))
+print(len(unique))
 print(len(all))
 
-print('\n'.join(unuqie))
+print('\n'.join(unique))

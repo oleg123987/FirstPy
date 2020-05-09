@@ -8,7 +8,7 @@ f = open(r'C:\Users\Oleg\PycharmProjects\First\resources\sentence.txt', encoding
 words_amount = 0
 for line in f.readlines():  # построчное чтение из файла
     for word in line.split():  # цикл по словам в строке
-        # из слова удаляем лишние сиволы (не буквы), приводим к нижнему регистру, учитываем случай для "-" внутри слова
+        # из слова удаляем лишние символы (не буквы), приводим к нижнему регистру, учитываем случай для "-" внутри слова
         word = word.strip(string.punctuation + string.whitespace).lower().replace('-', '')
         # если слово состоит из букв и не содержится в исключениях (массивы ru, en)
         if word.isalpha() and word not in ru + en:
