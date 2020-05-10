@@ -17,6 +17,6 @@ def price_goods(prices):
 # s = sum(int(goods[i]) for i in range(0, int(len(goods))))
 
 price_goods(input().split())
-res = price_goods(goods)
-print(res)
-print(price_goods(['1000', '20', '310']))
+# res = price_goods(goods)
+# print(res)
+# print(price_goods(['1000', '20', '310']))
