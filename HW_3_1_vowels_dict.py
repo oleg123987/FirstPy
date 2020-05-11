@@ -17,7 +17,9 @@ f.close()
 
 print(vowels_ru)
 print(vowels_en)
-print('Количество гласных eng и ru всех строчек в файле:', sum(vowels_ru.values()) + sum(vowels_en.values()))
-print('Среди которых ru:', sum(vowels_ru.values()))
-print('Среди которых en:', sum(vowels_en.values()))
+sum_vowels_ru = sum(vowels_ru.values())
+sum_vowels_en = sum(vowels_en.values())
+print('Количество гласных eng и ru всех строчек в файле:', sum_vowels_ru + sum_vowels_en)
+print('Среди которых ru:', sum_vowels_ru)
+print('Среди которых en:', sum_vowels_en)
 
