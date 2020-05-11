@@ -4,8 +4,9 @@
 """
 
 password = 'Jkj*^83J3'
-check = str(input('Введите пароль:'))
-if password == check:
-    print('Пароль верный')
-else:
+while True:
+    check = input('Введите пароль:')
+    if password == check:
+        print('Пароль верный')
+        break
     print('Пароль введен не верно, повторите')
