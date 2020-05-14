@@ -6,8 +6,15 @@
 
 # a = list(range(1, 101))
 a = []
-signal = 1001
+signal = str(1001) * 1
+print(signal)
 for number in range(20):
     a.append(signal)
-    array = list(map(int, a))
-print(" ".join(array))
+# array = list(map(str, a))
+print("".join(a))
+
+seq = '1011101110111011101110111011101110111011'
+n = 3
+for i in range(0, len(seq), n):
+    if seq[i:i + n] == seq[i + n:i + n * 2]:  # срез сравнивается со следующим, при n = 4, будет 1011 == 1011
+        print(i, seq[i:i + n], seq[i + n:i + n * 2])
