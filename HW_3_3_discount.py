@@ -19,6 +19,8 @@ f.close()
 print(goods_csv)
 res = price_goods(goods_csv)
 
+# todo отредактировать goods.csv, добавить столбики : название товара, цена, количество
+# todo посчитать скидку из товаров со столбика "цена"
 
 
 # s = sum(int(goods[i]) for i in range(0, int(len(goods))))
