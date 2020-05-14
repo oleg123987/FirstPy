@@ -10,12 +10,13 @@ a = datetime.datetime.now()
 print(a.hour)
 # print(a.minute)
 # print(a.second)
+
 if 18 <= a.hour <= 23:
     print('Добрый вечер')
 if 0 <= a.hour <= 6:
     print('Доброй ночи')
 if 6 < a.hour < 12:
     print('Доброе утро')
-if 12 < a.hour < 18:
+if 12 <= a.hour < 18:
     print('Добрый день')
 

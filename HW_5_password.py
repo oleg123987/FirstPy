@@ -5,17 +5,15 @@
 """
 
 password = 'Jkj*^83J3'
-counter = 0
-# TODO добавить счётчик попыток равным 0
-while counter < 3:  # TODO пока кол-во попыток меньше 3
+attempts = 0
+while attempts < 3:
     check = input('Введите пароль:')
     if password == check:
         print('Пароль верный')
-        break
-    print('Пароль введен не верно, повторите')
-    # TODO увеличивать счётчик попыток на 1
-    counter += 1
-    if counter >= 3:
-        print('Вы заблокированы')
-# TODO выводить сообщение "Вы заблокированы" :)
+        exit()
+    attempts += 1
+    message = 'Пароль введен не верно'
+    # message = message + '. Вы заблокированы' if attempts == 3 else message + ', повторите'
+    message += '. Вы заблокированы' if attempts == 3 else ', повторите'
+    print(message)
 
