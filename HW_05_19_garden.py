@@ -7,24 +7,35 @@ garden = ('ромашка', 'роза', 'одуванчик', 'ромашка', 
 meadow = ('клевер', 'одуванчик', 'ромашка', 'клевер', 'мак', 'одуванчик', 'ромашка')
 
 # создайте множество цветов, произрастающих в саду и на лугу
-# garden_set =
-# meadow_set =
-# TODO здесь ваш код
+garden_set = set(garden)
+meadow_set = set(meadow)
 
-
-# TODO реализовать решения с помощью функций и их "арифметических" эквивалентов
-#  в итоге на каждый пункт должно получиться по два варианта
-#  Методы работы со множествами:
-#  https://docs.python.org/2/library/sets.html#set-objects
+print('Виды цветов в саду', garden_set)
+print('Виды цветов на лугу', meadow_set)
 
 # выведите на консоль все виды цветов
-# TODO здесь ваш код
+print('Все виды цветов', garden_set | meadow_set)
+output = garden_set.union(garden_set, meadow_set)
+print('Все виды цветов', output)
 
 # выведите на консоль те, которые растут и там и там
-# TODO здесь ваш код
+allflowers = garden_set.intersection(meadow_set)
+print('Растут там и там', allflowers)
 
 # выведите на консоль те, которые растут в саду, но не растут на лугу
-# TODO здесь ваш код
+
+diff_set = garden_set.difference(meadow_set)
+print('Не растут на лугу', diff_set)
+print('Не растут на лугу', garden_set - meadow_set)
+
+# symm_diff = garden_set.symmetric_difference(meadow_set)
+# print(symm_diff)
 
 # выведите на консоль те, которые растут на лугу, но не растут в саду
-# TODO здесь ваш код
+
+diff_set = meadow_set.difference(garden_set)
+print('Не растут в саду', diff_set)
+print('Не растут в саду', meadow_set - garden_set)
+
+# symm_diff = meadow_set.symmetric_difference(garden_set)
+# print(symm_diff)
