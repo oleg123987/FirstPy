@@ -19,11 +19,11 @@ output = garden_set.union(garden_set, meadow_set)
 print('Все виды цветов', output)
 
 # выведите на консоль те, которые растут и там и там
-allflowers = garden_set.intersection(meadow_set)
-print('Растут там и там', allflowers)
+all_flowers = garden_set.intersection(meadow_set)
+print('Растут там и там', all_flowers)
+print('Растут там и там', garden_set & meadow_set)
 
 # выведите на консоль те, которые растут в саду, но не растут на лугу
-
 diff_set = garden_set.difference(meadow_set)
 print('Не растут на лугу', diff_set)
 print('Не растут на лугу', garden_set - meadow_set)
@@ -39,3 +39,5 @@ print('Не растут в саду', meadow_set - garden_set)
 
 # symm_diff = meadow_set.symmetric_difference(garden_set)
 # print(symm_diff)
+
+# NOTE решение замечательное! Оформление шикарное! Спасибо за такой старательный подход
