@@ -15,6 +15,13 @@ def count_sum(path):
     return summa
 
 
-file1 = count_sum('resources/logs/statHrefs.log')
-file2 = count_sum('resources/logs/statSearchHrefs.log')
-print(file1 + file2)
+logs = ['resources/logs/statHrefs.log', 'resources/logs/statSearchHrefs.log']
+# TODO как получить список файлов директории в Python
+
+# summa = 0
+# for path in logs:
+#     summa += count_sum(path)
+# print(summa)
+
+print(sum(map(count_sum, logs)))
+
