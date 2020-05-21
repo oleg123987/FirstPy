@@ -22,3 +22,4 @@ print(my_favorite_movies[-22:-17])
 
 print(*my_favorite_movies.split(', '))
 print(my_favorite_movies.find('Чужие'))  # возвращает индекс, с которого объект встретился в строке первый раз
+# print(my_favorite_movies.replace(',', ':'))
