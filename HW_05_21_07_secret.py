@@ -11,8 +11,16 @@ secret_message = [
     'бсц59мегщ2лятьаьгенедыв9фк9ехб1а',
 ]
 
-print(secret_message[0][3:4])
-print(secret_message[0][3])
+print(secret_message[0][3:4], end=" ")
+print(secret_message[1][9:13], end=" ")
+print(secret_message[2][5:15:2], end=" ")
+
+print(secret_message[3][12:6:-1], end=" ")
+print(secret_message[4][20:15:-1])
+
+print(secret_message[3][7:13][::-1])
+print(secret_message[4][16:21][::-1])
+
 
 # Нужно его расшифровать и вывести на консоль в удобочитаемом виде.
 # Должна получиться фраза на русском языке, например: как два байта переслать.
@@ -32,7 +40,3 @@ print(secret_message[0][3])
 # Подсказки:
 #   В каждом элементе списка зашифровано одно слово.
 #   Требуется задать конкретные индексы, например secret_message[3][12:23:4]
-
-# TODO вывести расшифрованное сообщение
-
-print('в бане веник дороже денег')
