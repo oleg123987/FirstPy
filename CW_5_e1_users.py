@@ -6,8 +6,18 @@
 from termcolor import cprint, colored
 
 
-file_name = input(colored('Укажите имя файла: ', color='magenta'))
-cprint('Argentina', color='cyan')
+# file_name = input(colored('Укажите имя файла: ', color='magenta'))
+# cprint('Argentina', color='cyan')
+
+f_orders = open('resources/e1_users - users.csv')
+f_orders.readline()  # пропуск первой строки с метаданными таблицы
+countries = {""}
+for line in f_orders.readlines():
+    countries.add(line.split(',')[6])
+
+f_orders.close()
+cprint(countries, color='yellow')
+
 
 '''
 Документация:
