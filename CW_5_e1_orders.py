@@ -1,3 +1,4 @@
+#  Подсчитать общую сумму всех заказов
 f_orders = open('resources/e1_orders - orders.csv')
 f_orders.readline()  # пропуск первой строки с метаданными таблицы
 summa = 0
