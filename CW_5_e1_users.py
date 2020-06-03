@@ -1,4 +1,4 @@
-import random
+from random import choice
 from termcolor import cprint, colored
 
 """
@@ -31,7 +31,7 @@ f_users.close()
 #     index = random.randrange(0, len(colours))
 #     cprint(country, color=colours[index])
 # TODO пример решения с помощью генератора
-[cprint(country, color=colours[random.randrange(0, len(colours))]) for country in countries]
+[cprint(country, color=choice(colours)) for country in countries]
 
 '''
 Документация:
