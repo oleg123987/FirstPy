@@ -22,15 +22,16 @@ colours = [
 f_users = open('resources/e1_users - users.csv')
 f_users.readline()  # пропуск первой строки с метаданными таблицы
 countries = set()
-for line in f_users.readlines():
-    countries.add(line.split(',')[6].strip())
-# TODO решить с помощью генератора (то есть "заменить" цикл конструкцией в [])
+# for line in f_users.readlines():
+#     countries.add(line.split(',')[6].strip())
+# решить с помощью генератора (то есть "заменить" цикл конструкцией в [])
+[countries.add(line.split(',')[6].strip()) for line in f_users.readlines()]
 f_users.close()
 
 # for country in countries:
 #     index = random.randrange(0, len(colours))
 #     cprint(country, color=colours[index])
-# TODO пример решения с помощью генератора
+# пример решения с помощью генератора
 [cprint(country, color=choice(colours)) for country in countries]
 
 '''
