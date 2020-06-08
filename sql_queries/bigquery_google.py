@@ -1,5 +1,6 @@
+from google.cloud import storage
+
 def explicit():
-    from google.cloud import storage
 
     # Explicitly use service account credentials by specifying the private key
     # file.
